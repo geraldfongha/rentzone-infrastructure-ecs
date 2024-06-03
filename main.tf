@@ -80,8 +80,8 @@ module "application_load_balancer" {
 
 # create s3 bucket
 module "s3_bucket" {
-  source = "git@github.com:geraldfongha/terraform-modules.git//s3"
-  project_name = local.project_name
+  source               = "git@github.com:geraldfongha/terraform-modules.git//s3"
+  project_name         = local.project_name
   env_file_bucket_name = var.env_file_bucket_name
-  env_file_name = var.env_file_name
+  env_file_name        = var.env_file_name
 }
